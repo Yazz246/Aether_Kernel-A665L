@@ -38,7 +38,7 @@ fi
 cd $kernel_dir
 
 if [ ! -e $kernel_dir/out ]; then
-make aether_itel_a70_defconfig O=out \
+make aether_defconfig O=out \
             ARCH=arm64 \
             LLVM=1 \
             CC=clang\
